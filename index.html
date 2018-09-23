@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wdl project</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="background">
+
+	<div class="nav">
+		<a class="a active" href="#">HOME</a>
+		<a class="b" href="#">ABOUT US</a>
+		<a class="c" href="#">GALLERY</a>
+		<a class="d" href="#">CONTACT</a>
+	</div>	
+	<div class="content">
+		<div class="home">
+			<h1>wdl project</h1>
+			<h3>portfolio website</h3>
+		</div>
+		<div class="aboutus">
+			<p><b>Lorem Ipsum </b>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown<br> printer took a galley of type and scrambled it to make a type specimen book. It has survived <br>not only five centuries, but also the leap into electronic typesetting, </p>
+		</div>
+		<div class="gallery">
+			<div class="image">
+				<img src="images/seven.jpg" alt="image">
+				<img src="images/six.jpg" alt="image">
+				<img src="images/five.jpg" alt="image">
+				<img src="images/four.jpg" alt="image">
+				<img src="images/three.jpg" alt="image">
+				<img src="images/two.jpg" alt="image">
+				<img src="images/one.jpg" alt="image">
+				<img src="images/bg.jpg" alt="image">
+			</div>
+		</div>
+		<div class="contactus">
+			<div class="contactform">
+				<form action="" method="post">
+					<input type="text" class="inputtext" name="first" placeholder="first name">
+					<input type="text" class="inputtext" name="" placeholder="last name">
+					<input type="email" class="inputtext" name="" placeholder="email">
+					<textarea cols="5" rows="5" class="inputmessage" placeholder="message"></textarea>
+					<input type="submit" class="submitbutton" value="submit" name="">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a').click(function(){
+			//alert('hhh');
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+		var $a = $('.a'),
+		 $b = $('.b'),
+		 $c = $('.c'),
+		 $d = $('.d'),
+		 $home = $('.home'),
+		 $aboutus = $('.aboutus'),
+		 $gallery = $('.gallery'),
+		 $contactus = $('.contactus');
+		 
+
+		 $a.click(function(){
+		 	$home.fadeIn();
+		 	$aboutus.fadeOut();
+		 	$gallery.fadeOut();
+		 	$contactus.fadeOut();
+		 });
+		 $b.click(function(){
+		 	$aboutus.fadeIn();
+		 	$home.fadeOut();
+		 	$gallery.fadeOut();
+		 	$contactus.fadeOut();
+		 });
+		 $c.click(function(){
+		 	$gallery.fadeIn();
+		 	$aboutus.fadeOut();
+		 	$home.fadeOut();
+		 	$contactus.fadeOut();
+		 });
+		 $d.click(function(){
+		 	$contactus.fadeIn();
+		 	$gallery.fadeOut();
+		 	$aboutus.fadeOut();
+		 	$home.fadeOut();
+		 });
+
+});
+	
+</script>
+</body>
+</html>
