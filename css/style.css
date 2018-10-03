@@ -15,15 +15,14 @@ html , body{
 	background-image: url(../images/bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
+	position: absolute;
 	overflow-y: auto;
 }
 .nav{
 	width:350px;
 	height: auto;
-	
 	position: absolute;
-	top: 20%;
+	top: 15%;
 	left:0; 
 
 }
@@ -55,13 +54,13 @@ a.active,.nav a:hover{
 	width: 90%;
 }
 .b{
-	width: 75%;
+	width: 85%;
 }
 .c{
-	width: 70%;
+	width: 80%;
 }
 .d{
-	width: 70%;
+	width: 75%;
 } 
 .content{
 	position: absolute;
@@ -126,6 +125,7 @@ a.active,.nav a:hover{
 
 .image img{
 	width: 30%;
+	margin: 0.5%;
 	transition: all ease 0.5s; 
 	-webkit-transition: all ease 0.5s;
 	transform: scale(1);
@@ -137,7 +137,7 @@ a.active,.nav a:hover{
 	-webkit-transform:scale(1.2);
 }
 
-.contactus{
+/*.contactus{
 	position: absolute;
 	right: 0;
 	top: 10px;
@@ -179,4 +179,43 @@ a.active,.nav a:hover{
 	clear: both;
 	margin-top: 5px;
 	border-radius: 5px;
+}*/
+main{
+	margin-top: 10px;
 }
+.contact-form,.social-media{
+	float: left;
+	position: relative;
+	width: 46%;
+	margin-left: 2%;
+	border: 1px solid #000000;
+	padding: 10px;
+	border-radius: 4px 4px;
+
+}
+
+.contact-form h3,.social-media h3{
+	text-align: center;
+
+}
+.social-media i{
+	display: inline;
+	margin-right: 5px;
+
+}
+.social-media a{
+	display: block;
+	color: #000000;
+	text-decoration: none;
+
+}
+.contact-form input[type="submmit"]{
+	width: 88%;
+	display: block;
+	margin:0 left;
+	background-color: #0a84ff;
+	color: #ffffff;
+	border-radius: 5px;
+	border: 0; 
+}
+

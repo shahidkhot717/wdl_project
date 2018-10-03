@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>wdl project</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
 <div class="background">
@@ -12,6 +14,7 @@
 		<a class="b" href="#">ABOUT US</a>
 		<a class="c" href="#">GALLERY</a>
 		<a class="d" href="#">CONTACT</a>
+		<a class="e" href="#">RESUME</a>
 	</div>	
 	<div class="content">
 		<div class="home">
@@ -23,26 +26,58 @@
 		</div>
 		<div class="gallery">
 			<div class="image">
-				<img src="images/seven.jpg" alt="image">
-				<img src="images/six.jpg" alt="image">
-				<img src="images/five.jpg" alt="image">
-				<img src="images/four.jpg" alt="image">
-				<img src="images/three.jpg" alt="image">
-				<img src="images/two.jpg" alt="image">
-				<img src="images/one.jpg" alt="image">
-				<img src="images/bg.jpg" alt="image">
+				<img src="images/seven.jpg" class="img-thumbnail" alt="image">
+				<img src="images/six.jpg" class="img-thumbnail" alt="image">
+				<img src="images/five.jpg" class="img-thumbnail" alt="image">
+				<img src="images/four.jpg" class="img-thumbnail" alt="image">
+				<img src="images/three.jpg" class="img-thumbnail" alt="image">
+				<img src="images/two.jpg" class="img-thumbnail" alt="image">
+				<img src="images/one.jpg" class="img-thumbnail" alt="image">
+				<img src="images/nine.jpg" class="img-thumbnail" alt="image">
+				<img src="images/eight.jpg" class="img-thumbnail" alt="image">
 			</div>
 		</div>
 		<div class="contactus">
-			<div class="contactform">
-				<form action="" method="post">
-					<input type="text" class="inputtext" name="first" placeholder="first name">
-					<input type="text" class="inputtext" name="" placeholder="last name">
-					<input type="email" class="inputtext" name="" placeholder="email">
-					<textarea cols="5" rows="5" class="inputmessage" placeholder="message"></textarea>
-					<input type="submit" class="submitbutton" value="submit" name="">
-				</form>
-			</div>
+			<main>
+		<div class="contact-form">
+			<h3>Contact Me</h3>
+			<form action="" methd="post">
+				<div>
+					Email
+				</div>
+				<label>
+					<input type="email" name="useremail" value="" placeholder="username@example.com">
+				</label>
+
+				<div>
+					Subject
+				</div>
+				<label>
+					<input type="text" name="subject" value="" placeholder="please describe your queries">
+				</label>
+
+				<div>
+					Message
+				</div>
+				<label>
+					<textarea name="Message"></textarea> 
+				</label>
+				<div>
+					<input type="submit" name="Submit" value="submit" onclick="alert('hello')">
+				</div>
+			</form>
+
+		</div>
+
+		<div class="social-media">
+			<h3>Get Connected</h3>
+			<a href="https://facebook.com"><i class="fab fa-facebook-square"></i>Facebook</a>
+			<a href="https://linkedin.com"><i class="fab fa-linkedin fa-2x"></i>Linkedin</a>
+			<a href="https://twitter.com"><i class="fab fa-twitter fa-2x"></i>Twitter</a>
+			<a href="https://stackoverflow.com"><i class="fab fa-stack-overflow fa-2x"></i>StackoverFlow</a>
+			<a href="https://github.com"><i class="fab fa-github fa-2x"></i>github.com</a>
+		</div>
+	</main>
 		</div>
 	</div>
 </div>
